@@ -1,0 +1,196 @@
+(require 'package)
+(setq package-archives
+      '(("GNU ELPA"     . "https://elpa.gnu.org/packages/")
+	("MELPA"        . "https://melpa.org/packages/")
+	("ORG"          . "https://orgmode.org/elpa/")
+	("MELPA Stable" . "https://stable.melpa.org/packages/")
+	("nongnu"       . "https://elpa.nongnu.org/nongnu/"))
+      package-archive-prioritites
+      '(("GNU ELPA"     . 20)
+	("MELPA"        . 15)
+	("ORG"          . 10)
+	("MELPA Stable" . 5)
+	("nongnu"       . 0)))
+(package-initialize)
+
+;; Bars and UI
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
+(tooltip-mode -1)
+(setq use-file-dialog nil use-dialog-box nil)
+
+;; Templates
+
+;; Save place mode
+(save-place-mode +1)
+
+;; Abbrev mode
+(add-hook 'text-mode-hook 'abbrev-mode)
+(add-hook 'prog-mode-hook 'abbrev-mode)
+
+;; Avy keybind
+(global-set-key (kbd "M-j") 'avy-goto-char-timer)
+
+;; Line highlighting
+(add-hook 'occur-mode-hook 'hl-line-mode)
+(add-hook 'dired-mode-hook 'hl-line-mode)
+(add-hook 'package-menu-mode-hook 'hl-line-mode)
+
+;; Flyspell
+(add-hook 'text-mode-hook 'flyspell-mode)
+
+;; Text adjusting
+(keymap-global-set "C-+" 'text-scale-adjust)
+
+;; Viewing docs
+(setq view-read-only t)
+(add-hook 'doc-view-mode-hook 'auto-revert-mode)
+(add-hook 'pdf-view-mode-hook 'auto-revert-mode)
+
+;; Dired things
+(setq dired-dwim-target t)
+(add-hook 'dired-load-hook (lambda () (require 'dired-x)))
+
+;; Fix bottom scolling
+(setq scroll-conservatively 100000)
+
+;; org-mode
+(require 'org)
+(require 'org-tempo)
+;;(add-to-list 'org-structure-template-alist '("sg" "#+BEGIN_SRC gnuplot :eval yes :file graph.png?\n set title ""?/n set zeroaxis linewidth 2?/n set grid?/n set xrange[-5:5]?/n set yrange[-5:5]?/n set border?\n#+END_SRC"))
+
+
+;; Must do this so the agenda knows where to look for my files
+(setq org-agenda-files '("~/Documents/org"))
+
+;; When a TODO is set to a done state, record a timestamp
+(setq org-log-done 'time)
+
+;; Associate all org files with org mode
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+
+;; Make the indentation look nicer, turn on spell check, make lines wrap correctly
+(add-hook 'org-mode-hook 'org-indent-mode)
+(add-hook 'org-mode-hook 'flyspell-mode)
+(add-hook 'org-mode-hook 'visual-line-mode)
+
+;; Remap the change priority keys to use the UP or DOWN key
+(define-key org-mode-map (kbd "C-c k") 'org-priority-up)
+(define-key org-mode-map (kbd "C-c j") 'org-priority-down)
+
+;; Shortcuts for storing links, viewing the agenda, and starting a capture
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(define-key global-map "\C-cc" 'org-capture)
+
+;; Capture Templates
+(setq org-capture-templates
+      '(    
+        ("g" "General To-Do"
+         entry (file+headline "~/Documents/org/todos.org" "General Tasks")
+         "* TODO [#B] %?\n:Created: %T\n "
+         :empty-lines 0)
+	("n" "Note"
+         entry (file+headline "~/Documents/org/notes.org" "Random Notes")
+         "** %?"
+         :empty-lines 0)
+	))
+
+;; TODO states
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "PLANNING(p)" "IN-PROGRESS(i@/!)" "|" "DONE(d!)" "WONT-DO(w@/!)" )
+        ))
+
+;; Tags
+(setq org-tag-alist '(
+                      ;; Header types
+                      ("lesson" . ?l)
+		      ("export" . ?e)
+		      ("noexport" . ?n)
+		      ))
+
+;; evil-mode (if you uncomment this you're a quitter)
+;;(unless (package-installed-p 'evil)
+;;  (package-install 'evil))
+;;(require 'evil)
+;;(evil-mode 1)
+;;(evil-define-key 'normal org-mode-map (kbd "<tab>") #'org-cycle)
+
+;; Theming
+(load-theme 'catppuccin :no-confirm)
+(setq catppuccin-flavor 'frappe)
+(catppuccin-reload)
+
+;; nov
+(add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
+
+;; Save what you enter into minibuffer prompts
+(setq history-length 25)
+(savehist-mode 1)
+
+;; Remember and restore the last cursor location of opened files
+(save-place-mode 1)
+
+;; Move customization variables to a separate file and load it
+(setq custom-file (locate-user-emacs-file "custom-vars.el"))
+(load custom-file 'noerror 'nomessage)
+
+;; Don't pop up UI dialogs when prompting
+(setq use-dialog-box nil)
+
+;; active Babel languages
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((gnuplot . t)))
+
+;; Vertico and Marginalia
+(setq completion-styles '(partial-completion substring flex))
+(unless (package-installed-p 'vertico)
+  (with-demoted-errors "%s"
+	(unless package-archive contents
+		(package-refresh-contents))
+	(package-install 'vertico)))
+(with-demoted-errors "%s" (vertico-mode +1))
+
+(unless (package-installed-p 'marginalia)
+  (with-demoted-errors "%s"
+    (unless package-archive-contents
+      (package-refresh-contents))
+    (package-install 'marginalia)))
+(with-demoted-errors "%s" (marginalia-mode +1))
+
+;; eww cookies blocker
+(setq url-cookie-untrusted-urls '(".*"))
+
+;;teacher export functions
+(defun test-char-replace ()
+  "replace text between /s with latex blank space"
+  (interactive)
+  (beginning-of-buffer)
+  (while (re-search-forward "/" nil t)
+    (backward-char 1)
+    (delete-forward-char 1)
+    (zap-to-char nil ?/)
+    (insert "\\rule{3.5cm}{0.15mm}")))
+
+(defun org-teacher-export ()
+  "export as pdf handout and slideshow with blank spaces for vocabulary"
+  (interactive)
+  (save-buffer)
+  (test-char-replace)
+  (let (
+        (obj-dir "~/Documents/org/slides")
+        (filename-stem (file-name-sans-extension (expand-file-name (concat "~/Documents/org/slides/" (buffer-name)))))
+        (filename (file-name-sans-extension buffer-file-name))
+        )
+    (setq org-confirm-babel-evaluate nil)
+    (org-export-to-file 'latex (concat filename-stem "_handout.tex"))
+    (org-latex-compile (concat filename-stem "_handout.tex"))
+    (org-export-to-file 'beamer (concat filename-stem "_slides.tex"))
+    (org-latex-compile (concat  filename-stem "_slides.tex"))
+    (setq org-confirm-babel-evaluate t)
+    (revert-buffer nil 1)))
+
+;; Bind org-teacher-export
+(define-key org-mode-map (kbd "C-c t") 'org-teacher-export)

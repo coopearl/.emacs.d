@@ -1,0 +1,10 @@
+ls
+cd
+ls
+ls -a
+yay -Syu
+cd
+ls
+cmus
+cd
+sudo pacman -S mpv

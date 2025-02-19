@@ -1,0 +1,31 @@
+HTTP/1.1 200 OK
+Date: Tue, 18 Feb 2025 01:27:30 GMT
+Content-Type: image/svg+xml
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Cache-Control: public, max-age=14400, must-revalidate
+ETag: W/"2545de275f246a9c2e53927c6b06346e"
+content-security-policy: frame-ancestors 'self';
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Yrg6b%2FzAYSkq5GCrmNMvcvVqMlAbkiJpPV0%2B5AxwwxKEmGCcc1HHr4jLXm8AnE04QMxxX4Ot%2B3l1HhvUB0eEtfJ%2BQDjQnVmKD%2BATiJD0djA5Ll4Fedea0LDHKjqFv7vtzspVNKUi8TjxyZsQ1R2g"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+CF-Cache-Status: HIT
+Age: 431
+Server: cloudflare
+CF-RAY: 913a3c3188ed75f1-SEA
+alt-svc: h3=":443"; ma=86400
+server-timing: cfL4;desc="?proto=TCP&rtt=6723&min_rtt=6386&rtt_var=1621&sent=6&recv=8&lost=0&retrans=0&sent_bytes=3106&recv_bytes=863&delivery_rate=663390&cwnd=248&unsent_bytes=0&cid=aca548a0a309e16c&ts=141&x=0"
+
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="36" viewBox="0 0 21 36">
+    <defs>
+        <linearGradient id="a" x1="0%" y1="81.317%" y2="10.091%">
+            <stop offset="0%" stop-color="#A5DE37"/>
+            <stop offset="100%" stop-color="#4C671A"/>
+        </linearGradient>
+    </defs>
+    <path fill="url(#a)" fill-rule="evenodd" d="M16.098 14.637h2.926V11.71h-2.926v2.927zm-4.39 17.561c0 1.903-2.928 1.903-2.928 0 0-1.902 2.927-1.902 2.927 0zM2.926 7.32c1.902 0 1.902 2.927 0 2.927-1.903 0-1.903-2.927 0-2.927zm16.83 2.927c-3.294.22-5.123-.512-5.123.732.22 3.292-.512 5.122.732 5.122h1.463v4.097l-5.853 5.268V2.491c1.61 1.463 1.683 1.902 2.195 1.902.658 0 .951-.805.512-1.244-3.146-3.073-2.927-3-3.146-3.073-.293-.146-.586-.073-.805.147-1.976 2.268-3.805 3.073-2.927 3.95a.707.707 0 0 0 1.024 0l1.683-1.682v18.512L3.66 15.735v-4.171c3.365-.878 2.707-5.78-.732-5.78A2.935 2.935 0 0 0 0 8.71c0 1.39.951 2.488 2.195 2.854-.073.293 0 1.463 0 4.463 0 .586.146.366 7.317 6.878v6.366c-3.366.878-2.634 5.78.732 5.78 3.366 0 4.024-4.902.732-5.78v-1.975c7.17-6.586 7.317-6.293 7.317-6.878v-4.39h1.463c.44 0 .732-.293.732-.732v-4.39c0-.366-.293-.66-.732-.66z" transform="translate(0 .878)"/>
+</svg>

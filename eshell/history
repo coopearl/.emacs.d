@@ -1,0 +1,21 @@
+ls
+cd
+ls
+ls -a
+yay -Syu
+cd
+ls
+cmus
+cd
+ls
+cd Downloads/
+ls
+rm James\ Gleick\ -\ Chaos_\ Making\ a\ New\ Science-Penguin\ Books\ \(2008\).epub 
+rm Robert\ M.\ Galford_\ Bob\ Frisch_\ Cary\ Greene\ -\ Simple\ Sabotage_\ A\ Modern\ Field\ Manual\ for\ Detecting\ and\ Rooting\ Out\ Everyday\ Behaviors\ That\ Undermine\ Your\ Workplace-HarperCollins\ \(2015\).epub Samuel\ R.\ Delany\ -\ Dhalgren-Vintage\ \(2001\).epub The\ Exegesis\ of\ Philip\ K_\ Dick\ --\ Philip\ K_\ Dick\ --\ Houghton\ Mifflin\ Harcourt\ --\ 14200fd31ff069b2a94b95903ff1e6f9\ --\ Anna’s\ Archive.epub 
+ls
+cd
+bluetoothctl
+exit
+cd
+bluetoothctl 
+exit

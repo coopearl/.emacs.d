@@ -1,0 +1,33 @@
+HTTP/1.1 200 OK
+Date: Tue, 18 Feb 2025 01:27:30 GMT
+Content-Type: image/svg+xml
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Cache-Control: public, max-age=14400, must-revalidate
+ETag: W/"184dc3a1054bb8e5d0ff5fdc1d3498b7"
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=o8tCp9FCuTHnT4bFA9r7TbfhlTZTvsyWQuoLUvpPyRfXLXCt5HH843VXC1%2FQ1NZmhnmCduuXj15Q22t7Wof8ihsPSTonHdgaXmpnntnemhoqxAePWOKqbTFcLWe5uZHhxomC"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+CF-Cache-Status: HIT
+Age: 1626
+Server: cloudflare
+CF-RAY: 913a3c315c9ba3bf-SEA
+alt-svc: h3=":443"; ma=86400
+server-timing: cfL4;desc="?proto=TCP&rtt=6348&min_rtt=6227&rtt_var=1368&sent=6&recv=8&lost=0&retrans=0&sent_bytes=3106&recv_bytes=865&delivery_rate=678711&cwnd=245&unsent_bytes=0&cid=27abf8b3d7422537&ts=172&x=0"
+
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+    <defs>
+        <linearGradient id="a" x1="11.055%" x2="87.084%" y1="100%" y2="23.064%">
+            <stop offset="0%" stop-color="#A5DE37"/>
+            <stop offset="100%" stop-color="#4C671A"/>
+        </linearGradient>
+        <linearGradient id="b" x1="15.254%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#A5DE37"/>
+            <stop offset="100%" stop-color="#4C671A"/>
+        </linearGradient>
+    </defs>
+    <path fill="url(#a)" fill-rule="evenodd" stroke="url(#b)" stroke-width=".5" d="M26.841 20.793a3.397 3.397 0 0 1 3.403 3.402 3.397 3.397 0 0 1-3.403 3.403 3.397 3.397 0 0 1-3.402-3.403 3.397 3.397 0 0 1 3.402-3.402m-22.682 0a3.397 3.397 0 0 1 3.402 3.402 3.397 3.397 0 0 1-3.402 3.403 3.397 3.397 0 0 1-3.403-3.403 3.397 3.397 0 0 1 3.403-3.402m7.313-15.619A4.16 4.16 0 0 0 15.5 8.317a4.16 4.16 0 0 0 4.028-3.143c5.125 1.69 8.826 6.52 8.826 12.216 0 .971-.105 1.916-.307 2.824a4.164 4.164 0 0 0-5.364 3.981c0 1.137.463 2.166 1.205 2.918a12.777 12.777 0 0 1-8.388 3.13 12.778 12.778 0 0 1-8.388-3.13 4.143 4.143 0 0 0 1.205-2.918 4.164 4.164 0 0 0-5.364-3.981 12.993 12.993 0 0 1-.307-2.824c0-5.695 3.7-10.525 8.826-12.216M15.5.756a3.397 3.397 0 0 1 3.402 3.403A3.397 3.397 0 0 1 15.5 7.56a3.397 3.397 0 0 1-3.402-3.402A3.397 3.397 0 0 1 15.5.756m0-.756a4.164 4.164 0 0 0-4.159 4.159c0 .087.007.173.012.26C5.866 6.173 1.89 11.324 1.89 17.39c0 1.071.12 2.116.354 3.12A4.151 4.151 0 0 0 0 24.194a4.164 4.164 0 0 0 4.159 4.159 4.14 4.14 0 0 0 2.374-.745A13.559 13.559 0 0 0 15.5 31c3.435 0 6.572-1.289 8.967-3.39a4.14 4.14 0 0 0 2.374.744A4.164 4.164 0 0 0 31 24.195a4.15 4.15 0 0 0-2.245-3.686c.235-1.003.355-2.048.355-3.119 0-6.065-3.976-11.216-9.463-12.972.005-.086.012-.172.012-.26A4.164 4.164 0 0 0 15.5 0" transform="translate(1 1)"/>
+</svg>
