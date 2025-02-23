@@ -7,7 +7,7 @@
  '(eww-auto-rename-buffer 'title)
  '(org-export-backends '(beamer html latex odt))
  '(package-selected-packages
-   '(vterm exwm go-translate magit avy vertico marginalia gnuplot nov catppuccin-theme comment-tags org-super-agenda)))
+   '(paredit geiser-guile geiser vterm magit avy vertico marginalia gnuplot nov catppuccin-theme comment-tags org-super-agenda)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

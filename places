@@ -1,6 +1,31 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/josh/.emacs.d/configuration.org" . 3267)
- ("/home/josh/Documents/org/algebra1/alg1-021825.org" . 267)
+(("/home/josh/guix-project/config/"
+  (dired-filename . "/home/josh/guix-project/config/home-config.scm"))
+ ("/home/josh/guix-project/config/home-config.scm" . 242)
+ ("/home/josh/guix-project/config/systems/base-system.scm" . 66)
+ ("/home/josh/.newsboat/"
+  (dired-filename . "/home/josh/.newsboat/urls"))
+ ("/home/josh/Documents/org/rssurls.org" . 309)
+ ("/home/josh/.newsboat/urls" . 377)
+ ("/home/josh/.emacs.d/configuration.org" . 11440)
+ ("/home/josh/guix-project/files/.emacs.d/init.el" . 443)
+ ("/home/josh/Documents/org/sicp.org" . 131)
+ ("/home/josh/Documents/org/algebra1/"
+  (dired-filename . "/home/josh/Documents/org/algebra1/graphvert.png"))
+ ("/home/josh/Documents/org/algebra1/alg1-021025.org" . 5232)
+ ("/home/josh/Documents/org/algebra1/alg1-022125_per3.org" . 904)
+ ("/home/josh/Documents/org/algebra1/alg1-022125.org" . 1950)
+ ("/home/josh/guix-project/files/"
+  (dired-filename . "/home/josh/guix-project/files/.emacs.d"))
+ ("/home/josh/guix-project/files/.emacs.d/"
+  (dired-filename . "/home/josh/guix-project/files/.emacs.d/init.el"))
+ ("/home/josh/.xinitrc" . 58)
+ ("/home/josh/guix-project/files/.xinitrc" . 59)
+ ("/home/josh/.emacs.d/"
+  (dired-filename . "/home/josh/.emacs.d/custom-vars.el"))
+ ("/home/josh/Documents/org/notes.org" . 26256)
+ ("/home/josh/Documents/org/Under the Violent Sky.org" . 811)
+ ("/home/josh/scripts/keyboardfix.sh" . 79)
  ("/home/josh/Documents/org/algebra1/alg1-021325.org" . 1433)
  ("/home/josh/Documents/org/algebra1/classdata.org" . 738)
  ("/home/josh/Documents/"
@@ -8,25 +33,17 @@
  ("/home/josh/Downloads/"
   (dired-filename . "/home/josh/Downloads/balenaEtcher-linux-x64-1.19.25.zip"))
  ("/home/josh/Documents/org/books.org" . 87)
- ("/home/josh/Documents/org/Under the Violent Sky.org" . 3619)
  ("/home/josh/Documents/org/packages.org" . 106)
- ("/home/josh/Documents/org/rssurls.org" . 1028)
- ("/home/josh/.newsboat/urls" . 1021)
  ("/home/josh/Documents/org/bookmarks.org" . 299)
  ("/home/josh/.settings/us.map" . 1930)
- ("/home/josh/.newsboat/"
-  (dired-filename . "/home/josh/.newsboat/urls"))
  ("/home/josh/.newsrc.eld" . 547)
- ("/home/josh/.xinitrc" . 61)
  ("/home/josh/.emacs.d/configuration.el" . 4495)
  ("/home/josh/.emacs.d/init.el" . 53)
  ("/home/josh/Documents/org/algebra1/alg1-020725.org" . 2037)
- ("/home/josh/Documents/org/algebra1/alg1-021025.org" . 4838)
  ("/home/josh/Documents/org/algebra1/alg1-021125.org" . 9066)
  ("/home/josh/Documents/org/algebra1/alg1-021325_per3.org" . 6418)
  ("/home/josh/Documents/org/siopunit.org" . 9387)
  ("/home/josh/Documents/org/algebra1/alg1-020625.org" . 3036)
- ("/home/josh/scripts/keyboardfix.sh" . 79)
  ("/home/josh/.newsboat/config" . 78)
  ("/home/josh/dwm/config.h" . 2974)
  ("/home/josh/scripts/texcleanup.sh" . 52)
@@ -38,10 +55,7 @@
  ("/home/josh/Documents/org/algebra1/alg1-020725_per3.org" . 34)
  ("/home/josh/Documents/org/What Can Be Done.org" . 7905)
  ("/home/josh/Documents/org/algebra1/alg1-020625_per3.org" . 909)
- ("/home/josh/Documents/org/notes.org" . 486)
  ("/home/josh/Documents/org/algebra1/period2seating.org" . 1380)
- ("/home/josh/Documents/org/algebra1/"
-  (dired-filename . "/home/josh/Documents/org/algebra1/alg1-020625.org"))
  ("/home/josh/st/frappe.h" . 656)
  ("/home/josh/st/config.h" . 41685)
  ("/home/josh/.emacs.d/bookmarks" . 251)
@@ -54,8 +68,6 @@
   (dired-filename . "/usr/share/zsh/plugins"))
  ("/home/josh/.config/picom/picom.conf" . 8887)
  ("/home/josh/Documents/org/todos.org" . 24)
- ("/home/josh/.emacs.d/"
-  (dired-filename . "/home/josh/.emacs.d/init.el"))
  ("/home/josh/Documents/org/"
   (dired-filename . "/home/josh/Documents/org/todos.org"))
  ("/home/josh/.config/"
@@ -67,12 +79,8 @@
   (dired-filename . "/etc/gtk-3.0"))
  ("/home/josh/.emacs.d/elpa/"
   (dired-filename . "/home/josh/.emacs.d/elpa/vertico-20250128.1729"))
- ("/home/josh/.emacs.d/elpa/vertico-20250128.1729/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/vertico-20250128.1729/vertico-autoloads.el"))
  ("/home/josh/.emacs.d/elpa/nov-20240825.1528/"
   (dired-filename . "/home/josh/.emacs.d/elpa/nov-20240825.1528/nov-autoloads.el"))
- ("/home/josh/.emacs.d/elpa/marginalia-20250128.1729/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/marginalia-20250128.1729/marginalia-autoloads.el"))
  ("/home/josh/.emacs.d/elpa/kv-20140108.1534/"
   (dired-filename . "/home/josh/.emacs.d/elpa/kv-20140108.1534/kv-autoloads.el"))
  ("/home/josh/.emacs.d/elpa/gnuplot-20240914.1522/"
@@ -85,8 +93,6 @@
   (dired-filename . "/home/josh/.emacs.d/elpa/compat-30.0.2.0/compat-25.el"))
  ("/home/josh/.emacs.d/elpa/comment-tags-20170910.1735/"
   (dired-filename . "/home/josh/.emacs.d/elpa/comment-tags-20170910.1735/comment-tags-autoloads.el"))
- ("/home/josh/.emacs.d/elpa/catppuccin-theme-20241211.322/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/catppuccin-theme-20241211.322/catppuccin-definitions.el"))
  ("/home/josh/.emacs.d/elpa/avy-20241101.1357/"
   (dired-filename . "/home/josh/.emacs.d/elpa/avy-20241101.1357/avy-autoloads.el"))
  ("/home/josh/.emacs.d/elpa/archives/"

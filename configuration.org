@@ -72,8 +72,10 @@ Turn off cookies entirely to continue being a Luddite.
 (setq url-cookie-untrusted-urls '(".*"))
 #+end_src
 ** EXWM
+I stopped using this for the time being. I am going to set up StumpWM on the Guix installer and the single threading is a pain when exporting my teaching slideshows because it makes me unable to use anything else at the same time. I may be back on this laptop eventually but for now I'm back to dwm.
+
 This sets up the necessary things to make Emacs into my window manager. I have nested the whole thing inside of a check for graphic environment so I can still open up in --nw mode if I need to in the tty and get things done without getting annoying popups. The first two functions make the buffer names not all just say "EXWM" ad the rest is just keybinding things. I am enjoying getting to use my keybindings in all apps! We will see if I stick with it, maybe will only on the laptop because I don't have too much of a need to do things other than Emacs and web browsing most of the time.
-#+begin_src emacs-lisp
+
 
 
   (defun exwm-update-class ()
@@ -160,7 +162,7 @@ This sets up the necessary things to make Emacs into my window manager. I have n
 
                                   (exwm-enable)))
 
-#+end_src
+
 
 
 ** Cleaning Up Installed Packages
@@ -182,22 +184,21 @@ These settings all but guarantee that my Emacs will be unusable to any stranger 
 #+end_src
 ** Theme
 This is my current preferred theme although I think that I would rather start changing things up. Right now this is how my whole operating system is arranged so I'll stick with it.
+
+I have now changed to prot's built in modus-vivendi which is nice
 #+begin_src emacs-lisp
+(load-theme 'modus-vivendi :no-confirm)
+#+end_src
   ;; Theming
 (when (display-graphic-p)
   (load-theme 'catppuccin :no-confirm)
   (setq catppuccin-flavor 'frappe)
   (catppuccin-reload))
-#+end_src
+  
 ** UI and Behavior Fixing
 For some reason this makes scrolling off the bottom only scroll one line at a time. 
 #+begin_src emacs-lisp
   (setq scroll-conservatively 100000)
-#+end_src
-This makes the scratch buffer start blank and open on startup.
-#+begin_src emacs-lisp
-(setq initial-scratch-message ""
-      initial-buffer-choice t)
 #+end_src
 
 * So-called Modes
@@ -232,6 +233,10 @@ Keep documents updated with the changes you are making.
 (setq view-read-only t)
 (add-hook 'doc-view-mode-hook 'auto-revert-mode)
 (add-hook 'pdf-view-mode-hook 'auto-revert-mode)
+#+end_src
+*** Geiser and Paredit
+#+begin_src emacs-lisp
+(add-hook 'scheme-load-hook 'paredit-mode)
 #+end_src
 ** Minor Modes
 *** Save Place
@@ -377,19 +382,4 @@ NOT ANYMORE: This function is what replaces italics with LaTeX blanks and then r
 
   (define-key org-mode-map (kbd "C-c t") 'org-teacher-export)
 #+end_src
-
-** TODO Translation Export
-#+begin_src emacs-lisp
-(require 'go-translate)
-
-(setq gt-langs '(en es))
-
-(setq gt-default-translator
-      (gt-translator
-       :taker (gt-taker :text 'region :pick 'nil)
-       :engines (list (gt-google-engine))
-       :render (gt-buffer-render)))
-#+end_src
-
-
-** TODO Tag based handout slides partition
+* Testing
