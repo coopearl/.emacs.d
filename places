@@ -1,130 +1,207 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/josh/guix-project/config/"
-  (dired-filename . "/home/josh/guix-project/config/home-config.scm"))
- ("/home/josh/guix-project/config/home-config.scm" . 242)
- ("/home/josh/guix-project/config/systems/base-system.scm" . 66)
- ("/home/josh/.newsboat/"
-  (dired-filename . "/home/josh/.newsboat/urls"))
- ("/home/josh/Documents/org/rssurls.org" . 309)
- ("/home/josh/.newsboat/urls" . 377)
- ("/home/josh/.emacs.d/configuration.org" . 11440)
- ("/home/josh/guix-project/files/.emacs.d/init.el" . 443)
+(("/home/josh/.newsrc.eld" . 2434)
+ ("/home/josh/Documents/org/algebra1/alg1-031025.org" . 1382)
+ ("/home/josh/Documents/org/algebra1/alg1-031025_per3.org" . 3263)
+ ("/home/josh/Documents/org/algebra1/alg1-030725.org" . 1459)
+ ("/home/josh/Documents/org/algebra1/alg1-030625.org" . 1216)
+ ("/home/josh/Music/"
+  (dired-filename
+   . "/home/josh/Music/Arthur Russell - Calling Out Of Context"))
+ ("/home/josh/Music/Arthur Russell - Calling Out Of Context/"
+  (dired-filename
+   . "/home/josh/Music/Arthur Russell - Calling Out Of Context/Arthur Russell - Calling Out Of Context"))
+ ("/home/josh/Documents/org/Under the Violent Sky.org" . 87)
+ ("/home/josh/Music/Arthur Russell - Springfield/"
+  (dired-filename . "/home/josh/Music"))
+ ("/home/josh/Documents/org/algebra1/alg1-030725_per3.org" . 1459)
+ ("/home/josh/.emacs.d/configuration.org" . 6753)
+ ("/home/josh/.xinitrc" . 70)
+ ("/home/josh/" (dired-filename . "/home/josh/Music"))
  ("/home/josh/Documents/org/sicp.org" . 131)
+ ("/home/josh/Documents/org/algebra1/alg1-022825.org" . 4994)
+ ("/home/josh/Documents/org/What Can Be Done.org" . 1674)
+ ("/home/josh/Documents/org/algebra1/alg1-030625_per3.org" . 2507)
+ ("/home/josh/Documents/org/algebra1/alg1-030425.org" . 3240)
+ ("/home/josh/st/config.h" . 193) ("/home/josh/dwm/config.h" . 466)
+ ("/home/josh/dmenu/config.h" . 319)
+ ("/home/josh/.emacs.d/games/tetris-scores" . 99)
+ ("/home/josh/Documents/org/materials/alg1-030425_slides.pdf" . 555149)
+ ("/home/josh/Documents/org/algebra1/alg1-030325.org" . 1213)
+ ("/home/josh/Documents/org/algebra1/alg1-030425_per3.org" . 229)
+ ("/home/josh/Documents/org/algebra1/alg1-022425.org" . 4687)
+ ("/home/josh/Documents/org/algebra1/alg1-022725.org" . 1257)
+ ("/home/josh/Documents/org/algebra1/alg1-030325_per3.org" . 221)
+ ("/home/josh/guix-project/config/home-config.scm" . 610)
+ ("/home/josh/guix-project/config/systems/base-system.scm" . 200)
+ ("/home/josh/Music/Cheekface - Middle Spoon/"
+  (dired-filename
+   . "/home/josh/Music/Cheekface - Middle Spoon/Cheekface - Middle Spoon - 01 Living Lo-Fi.flac"))
+ ("/home/josh/Documents/org/algebra1/alg1-022525.org" . 1677)
+ ("/home/josh/Calibre Library/Solvej Balle/On the Calculation of Volume (Book I) (506)/On the Calculation of Volume (Book I) - Solvej Balle.epub"
+  . 1264)
+ ("/home/josh/.emacs.d/auto-save-list/"
+  (dired-filename
+   . "/home/josh/.emacs.d/auto-save-list/.saves-782-archlinux~"))
+ ("/home/josh/Music/Arthur Russell - Calling Out Of Context/Arthur Russell - Calling Out Of Context/"
+  (dired-filename
+   . "/home/josh/Music/Arthur Russell - Calling Out Of Context/Arthur Russell - Calling Out Of Context/04. Arthur Russell - Calling Out Of Context.flac"))
+ ("/home/josh/.bash_profile" . 122) ("/home/josh/.bashrc" . 15)
+ ("/home/josh/Music/Arthur Russel - World of Echo/"
+  (dired-filename
+   . "/home/josh/Music/Arthur Russel - World of Echo/Arthur Russell - World Of Echo - 01 Tone Bone Kone.flac"))
+ ("/home/josh/Downloads/"
+  (dired-filename
+   . "/home/josh/Downloads/Arthur Russell - Springfield.zip"))
+ ("/home/josh/Calibre Library/Solvej Balle/"
+  (dired-filename
+   . "/home/josh/Calibre Library/Solvej Balle/On the Calculation of Volume (Book I) (506)"))
+ ("/home/josh/Calibre Library/Solvej Balle/On the Calculation of Volume (Book I) (506)/"
+  (dired-filename
+   . "/home/josh/Calibre Library/Solvej Balle/On the Calculation of Volume (Book I) (506)/On the Calculation of Volume (Book I) - Solvej Balle.epub"))
+ ("/home/" (dired-filename . "/home/josh"))
+ ("/" (dired-filename . "/home"))
+ ("/home/josh/Documents/org/writing.org" . 30136)
+ ("/home/josh/guix-project/"
+  (dired-filename . "/home/josh/guix-project/config"))
+ ("/home/josh/guix-project/config/"
+  (dired-filename . "/home/josh/guix-project/config/home-config.scm"))
+ ("/home/josh/Documents/org/rssurls.org" . 890)
+ ("/usr/share/emacs/30.1/etc/NEWS" . 123482)
+ ("/home/josh/Documents/org/algebra1/alg1-022425_per3.org" . 1658)
+ ("/home/josh/.emacs.d/"
+  (dired-filename . "/home/josh/.emacs.d/nov-places"))
+ ("/home/josh/Music/Bon Iver - SABLE/"
+  (dired-filename
+   . "/home/josh/Music/Bon Iver - SABLE/Bon Iver - SABLE, - 04 AWARDS SEASON.flac"))
+ ("/home/josh/Documents/org/materials/" . 2358)
+ ("/home/josh/Documents/org/teachingResources.org" . 616)
+ ("/home/josh/Documents/org/algebra1/alg1-022125.org" . 1064)
+ ("/home/josh/Documents/org/algebra1/alg1-021925.org" . 8281)
+ ("/home/josh/Music/mk.gee - Two Star & The Dream Police/"
+  (dired-filename . "/home/josh/Music"))
+ ("/home/josh/Music/100 gecs - 100 gecs/"
+  (dired-filename . "/home/josh/Music"))
+ ("/home/josh/Music/100 gecs - 10,000 gecs/"
+  (dired-filename
+   . "/home/josh/Music/100 gecs - 10,000 gecs/100 gecs - 10,000 gecs"))
+ ("/home/josh/Music/100 gecs - 10,000 gecs/100 gecs - 10,000 gecs/"
+  (dired-filename
+   . "/home/josh/Music/100 gecs - 10,000 gecs/100 gecs - 10,000 gecs/01. 100 gecs - Dumbest Girl Alive.flac"))
+ ("/home/josh/Music/100 gecs - 10,000 gecs/100 gecs - 10,000 gecs/01. 100 gecs - Dumbest Girl Alive.flac"
+  . 2)
+ ("/home/josh/.emacs.d/init.el" . 54)
+ ("/home/josh/guix-project/config/packages/" . 133)
+ ("/etc/environment" . 121)
+ ("/home/josh/guix-project/files/.emacs.d/init.el" . 443)
  ("/home/josh/Documents/org/algebra1/"
   (dired-filename . "/home/josh/Documents/org/algebra1/graphvert.png"))
  ("/home/josh/Documents/org/algebra1/alg1-021025.org" . 5232)
  ("/home/josh/Documents/org/algebra1/alg1-022125_per3.org" . 904)
- ("/home/josh/Documents/org/algebra1/alg1-022125.org" . 1950)
  ("/home/josh/guix-project/files/"
   (dired-filename . "/home/josh/guix-project/files/.emacs.d"))
  ("/home/josh/guix-project/files/.emacs.d/"
   (dired-filename . "/home/josh/guix-project/files/.emacs.d/init.el"))
- ("/home/josh/.xinitrc" . 58)
  ("/home/josh/guix-project/files/.xinitrc" . 59)
- ("/home/josh/.emacs.d/"
-  (dired-filename . "/home/josh/.emacs.d/custom-vars.el"))
  ("/home/josh/Documents/org/notes.org" . 26256)
- ("/home/josh/Documents/org/Under the Violent Sky.org" . 811)
  ("/home/josh/scripts/keyboardfix.sh" . 79)
  ("/home/josh/Documents/org/algebra1/alg1-021325.org" . 1433)
  ("/home/josh/Documents/org/algebra1/classdata.org" . 738)
  ("/home/josh/Documents/"
-  (dired-filename . "/home/josh/Documents/Algebra_ Chapter 0 - Paolo Aluffi.pdf"))
- ("/home/josh/Downloads/"
-  (dired-filename . "/home/josh/Downloads/balenaEtcher-linux-x64-1.19.25.zip"))
+  (dired-filename
+   . "/home/josh/Documents/Algebra_ Chapter 0 - Paolo Aluffi.pdf"))
  ("/home/josh/Documents/org/books.org" . 87)
  ("/home/josh/Documents/org/packages.org" . 106)
  ("/home/josh/Documents/org/bookmarks.org" . 299)
  ("/home/josh/.settings/us.map" . 1930)
- ("/home/josh/.newsrc.eld" . 547)
  ("/home/josh/.emacs.d/configuration.el" . 4495)
- ("/home/josh/.emacs.d/init.el" . 53)
  ("/home/josh/Documents/org/algebra1/alg1-020725.org" . 2037)
  ("/home/josh/Documents/org/algebra1/alg1-021125.org" . 9066)
  ("/home/josh/Documents/org/algebra1/alg1-021325_per3.org" . 6418)
  ("/home/josh/Documents/org/siopunit.org" . 9387)
  ("/home/josh/Documents/org/algebra1/alg1-020625.org" . 3036)
- ("/home/josh/.newsboat/config" . 78)
- ("/home/josh/dwm/config.h" . 2974)
  ("/home/josh/scripts/texcleanup.sh" . 52)
- ("/home/josh/dmenu/config.h" . 213)
  ("/home/josh/Documents/org/algebra1/alg1-020525.org" . 2933)
  ("/home/josh/Documents/org/algebra1/alg1-021025_per3.org" . 4678)
  ("/home/josh/Documents/org/exampleSlides.org" . 1469)
  ("/home/josh/.config/i3/config" . 7703)
  ("/home/josh/Documents/org/algebra1/alg1-020725_per3.org" . 34)
- ("/home/josh/Documents/org/What Can Be Done.org" . 7905)
  ("/home/josh/Documents/org/algebra1/alg1-020625_per3.org" . 909)
  ("/home/josh/Documents/org/algebra1/period2seating.org" . 1380)
  ("/home/josh/st/frappe.h" . 656)
- ("/home/josh/st/config.h" . 41685)
- ("/home/josh/.emacs.d/bookmarks" . 251)
  ("/home/josh/Documents/org/thesyllabusgame.org" . 137)
  ("/home/josh/Documents/org/algebra2.org" . 10883)
  ("/home/josh/Documents/org/Chapped Lips.org" . 61)
- ("/usr/share/"
-  (dired-filename . "/usr/share/zsh"))
- ("/usr/share/zsh/"
-  (dired-filename . "/usr/share/zsh/plugins"))
+ ("/usr/share/" (dired-filename . "/usr/share/zsh"))
+ ("/usr/share/zsh/" (dired-filename . "/usr/share/zsh/plugins"))
  ("/home/josh/.config/picom/picom.conf" . 8887)
  ("/home/josh/Documents/org/todos.org" . 24)
  ("/home/josh/Documents/org/"
   (dired-filename . "/home/josh/Documents/org/todos.org"))
- ("/home/josh/.config/"
-  (dired-filename . "/home/josh/.config/cmus"))
- ("/home/josh/.var/"
-  (dired-filename . "/home/josh/.var/app"))
+ ("/home/josh/.config/" (dired-filename . "/home/josh/.config/cmus"))
+ ("/home/josh/.var/" (dired-filename . "/home/josh/.var/app"))
  ("/home/josh/.var/app/" . 109)
- ("/etc/"
-  (dired-filename . "/etc/gtk-3.0"))
+ ("/etc/" (dired-filename . "/etc/gtk-3.0"))
  ("/home/josh/.emacs.d/elpa/"
   (dired-filename . "/home/josh/.emacs.d/elpa/vertico-20250128.1729"))
  ("/home/josh/.emacs.d/elpa/nov-20240825.1528/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/nov-20240825.1528/nov-autoloads.el"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/nov-20240825.1528/nov-autoloads.el"))
  ("/home/josh/.emacs.d/elpa/kv-20140108.1534/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/kv-20140108.1534/kv-autoloads.el"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/kv-20140108.1534/kv-autoloads.el"))
  ("/home/josh/.emacs.d/elpa/gnuplot-20240914.1522/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/gnuplot-20240914.1522/gnuplot-autoloads.el"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/gnuplot-20240914.1522/gnuplot-autoloads.el"))
  ("/home/josh/.emacs.d/elpa/gnupg/"
   (dired-filename . "/home/josh/.emacs.d/elpa/gnupg/private-keys-v1.d"))
  ("/home/josh/.emacs.d/elpa/esxml-20230308.2254/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/esxml-20230308.2254/esxml-autoloads.el"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/esxml-20230308.2254/esxml-autoloads.el"))
  ("/home/josh/.emacs.d/elpa/compat-30.0.2.0/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/compat-30.0.2.0/compat-25.el"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/compat-30.0.2.0/compat-25.el"))
  ("/home/josh/.emacs.d/elpa/comment-tags-20170910.1735/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/comment-tags-20170910.1735/comment-tags-autoloads.el"))
- ("/home/josh/.emacs.d/elpa/avy-20241101.1357/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/avy-20241101.1357/avy-autoloads.el"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/comment-tags-20170910.1735/comment-tags-autoloads.el"))
  ("/home/josh/.emacs.d/elpa/archives/"
   (dired-filename . "/home/josh/.emacs.d/elpa/archives/ORG"))
  ("/home/josh/.emacs.d/elpa/archives/ORG/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/archives/ORG/archive-contents"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/archives/ORG/archive-contents"))
  ("/home/josh/.emacs.d/elpa/archives/nongnu/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/archives/nongnu/archive-contents"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/archives/nongnu/archive-contents"))
  ("/home/josh/.emacs.d/elpa/archives/MELPA Stable/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/archives/MELPA Stable/archive-contents"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/archives/MELPA Stable/archive-contents"))
  ("/home/josh/.emacs.d/elpa/archives/MELPA/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/archives/MELPA/archive-contents"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/archives/MELPA/archive-contents"))
  ("/home/josh/.emacs.d/elpa/archives/GNU ELPA/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/archives/GNU ELPA/archive-contents"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/archives/GNU ELPA/archive-contents"))
  ("/home/josh/.emacs.d/elpa/archives/gnu/"
-  (dired-filename . "/home/josh/.emacs.d/elpa/archives/gnu/archive-contents"))
- ("/home/josh/.emacs.d/auto-save-list/"
-  (dired-filename . "/home/josh/.emacs.d/auto-save-list/.saves-13599-archlinux~"))
+  (dired-filename
+   . "/home/josh/.emacs.d/elpa/archives/gnu/archive-contents"))
  ("/home/josh/.emacs.d/.stfolder/"
-  (dired-filename . "/home/josh/.emacs.d/.stfolder/syncthing-folder-bd77d8.txt"))
+  (dired-filename
+   . "/home/josh/.emacs.d/.stfolder/syncthing-folder-bd77d8.txt"))
  ("/home/josh/.emacs.d/transient/"
   (dired-filename . "/home/josh/.emacs.d/transient/history.el"))
  ("/home/josh/.emacs.d/url/"
   (dired-filename . "/home/josh/.emacs.d/url/cookies"))
  ("/home/josh/Calibre Library/Zaretta Lynn Hammond/"
-  (dired-filename . "/home/josh/Calibre Library/Zaretta Lynn Hammond/Culturally Responsive Teaching and the Brain_ Promoting Authentic Engagement and Rigor Among Cu (133)"))
+  (dired-filename
+   . "/home/josh/Calibre Library/Zaretta Lynn Hammond/Culturally Responsive Teaching and the Brain_ Promoting Authentic Engagement and Rigor Among Cu (133)"))
  ("/home/josh/Calibre Library/Zaretta Lynn Hammond/Culturally Responsive Teaching and the Brain_ Promoting Authentic Engagement and Rigor Among Cu (133)/"
-  (dired-filename . "/home/josh/Calibre Library/Zaretta Lynn Hammond/Culturally Responsive Teaching and the Brain_ Promoting Authentic Engagement and Rigor Among Cu (133)/Culturally Responsive Teaching and the Bra - Zaretta Lynn Hammond.epub"))
+  (dired-filename
+   . "/home/josh/Calibre Library/Zaretta Lynn Hammond/Culturally Responsive Teaching and the Brain_ Promoting Authentic Engagement and Rigor Among Cu (133)/Culturally Responsive Teaching and the Bra - Zaretta Lynn Hammond.epub"))
  ("/home/josh/Calibre Library/Meena Srinivasan/"
-  (dired-filename . "/home/josh/Calibre Library/Meena Srinivasan/SEL Every Day_ Integrating Social and Emotional Learning With Instruction in Secondary Classroo (325)"))
+  (dired-filename
+   . "/home/josh/Calibre Library/Meena Srinivasan/SEL Every Day_ Integrating Social and Emotional Learning With Instruction in Secondary Classroo (325)"))
  ("/home/josh/Calibre Library/Meena Srinivasan/SEL Every Day_ Integrating Social and Emotional Learning With Instruction in Secondary Classroo (325)/"
-  (dired-filename . "/home/josh/Calibre Library/Meena Srinivasan/SEL Every Day_ Integrating Social and Emotional Learning With Instruction in Secondary Classroo (325)/cover.jpg"))
- ("/home/josh/Calibre Library/Zaretta Lynn Hammond/Culturally Responsive Teaching and the Brain_ Promoting Authentic Engagement and Rigor Among Cu (133)/Culturally Responsive Teaching and the Bra - Zaretta Lynn Hammond.epub" . 21915)
- ("/home/josh/.emacs.d/abbrev_defs" . 73)
- ("/usr/share/emacs/29.4/etc/NEWS" . 305))
+  (dired-filename
+   . "/home/josh/Calibre Library/Meena Srinivasan/SEL Every Day_ Integrating Social and Emotional Learning With Instruction in Secondary Classroo (325)/cover.jpg"))
+ ("/home/josh/Calibre Library/Zaretta Lynn Hammond/Culturally Responsive Teaching and the Brain_ Promoting Authentic Engagement and Rigor Among Cu (133)/Culturally Responsive Teaching and the Bra - Zaretta Lynn Hammond.epub"
+  . 21915)
+ ("/home/josh/.emacs.d/abbrev_defs" . 73))

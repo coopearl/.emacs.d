@@ -19,3 +19,30 @@ exit
 cd
 bluetoothctl 
 exit
+(+ 12 -9)
+fastfetc
+fastfetch
+exit
+ls
+cd
+date
+fastfetch
+find-file
+find-file Documents/org/sicp.org
+dired
+dired ~/
+ls
+cd
+adb shell
+exi
+exit
+ps
+pkill -9 -t tty1
+exit
+pkill -9 -t tty1
+exit
+pkill -9 -t tty1
+exit
+cd Downloads/
+ls
+adb shell

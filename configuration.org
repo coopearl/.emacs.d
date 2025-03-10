@@ -7,27 +7,18 @@ To use these things as intended you will need the following pacman packages:
 - aspell-en
 - gnuplot
 - texlive-bin
-- texlive-latex
+n- texlive-latex
 - texlive-latexextra
 - texlive-plaingeneric
 * Packages and Repositories
 ** Package Setup
 From what I've been told, these are the ones that you have to have to get started. I think I could delete most of these and the archive priorities section but I copied this from some random guy and now I'm too afraid to change it and break something. I mostly do not install packages anyways.
 #+begin_src emacs-lisp
-(require 'package)
-(setq package-archives
-      '(("GNU ELPA"     . "https://elpa.gnu.org/packages/")
-	("MELPA"        . "https://melpa.org/packages/")
-	("ORG"          . "https://orgmode.org/elpa/")
-	("MELPA Stable" . "https://stable.melpa.org/packages/")
-	("nongnu"       . "https://elpa.nongnu.org/nongnu/"))
-      package-archive-prioritites
-      '(("GNU ELPA"     . 20)
-	("MELPA"        . 15)
-	("ORG"          . 10)
-	("MELPA Stable" . 5)
-	("nongnu"       . 0)))
-(package-initialize)
+  (require 'package)
+  (setq package-archives
+        '(("GNU ELPA"     . "https://elpa.gnu.org/packages/")
+  	("MELPA"        . "https://melpa.org/packages/")))
+  (package-initialize)
 #+end_src
 ** Evil Mode
 Initially I used evil mode. I cannot say that prior to this Emacs adventure I was a true "vim user" but rather that I had gotten decently used to "vim-like" keybindings through programs like cmus and newsboat as well as things like vimium and my keybinds for i3. I was convinced by a series of guides and my experiences in info-mode to at least learn the default keybindings and so far I have not gone back.
@@ -58,9 +49,11 @@ I was fairly satisfied with the default minibuffer completion in Emacs but was c
 #+end_src
 ** Avy
 While I haven't totally built this in yet it seems incredibly useful to be able to switch to a different part of another window in a single function. The potential here seems high so we will see if I can adjust to this as my main way of moving around the frame.
-#+begin_src emacs-lisp
+
+I got rid of this an attempt to get better at using isearch.
+
 (global-set-key (kbd "M-j") 'avy-goto-char-timer)
-#+end_src
+
 ** Nov
 If we can't read in Emacs what's it even for???
 #+begin_src emacs-lisp
@@ -75,6 +68,8 @@ Turn off cookies entirely to continue being a Luddite.
 I stopped using this for the time being. I am going to set up StumpWM on the Guix installer and the single threading is a pain when exporting my teaching slideshows because it makes me unable to use anything else at the same time. I may be back on this laptop eventually but for now I'm back to dwm.
 
 This sets up the necessary things to make Emacs into my window manager. I have nested the whole thing inside of a check for graphic environment so I can still open up in --nw mode if I need to in the tty and get things done without getting annoying popups. The first two functions make the buffer names not all just say "EXWM" ad the rest is just keybinding things. I am enjoying getting to use my keybindings in all apps! We will see if I stick with it, maybe will only on the laptop because I don't have too much of a need to do things other than Emacs and web browsing most of the time.
+
+#+begin_src emacs-lisp
 
 
 
@@ -161,9 +156,15 @@ This sets up the necessary things to make Emacs into my window manager. I have n
                                           ([?\C-g] . [?\C-c])))
 
                                   (exwm-enable)))
-
-
-
+#+end_src
+** EMMS
+#+begin_src emacs-lisp
+  (emms-all)
+  (setq emms-player-list '(emms-player-mpv)
+        emms-info-functions '(emms-info-native))
+  (define-key dired-mode-map "\C-c\C-m" 'emms-add-dired)
+  (define-key global-map "\C-cm" 'emms)
+#+end_src
 
 ** Cleaning Up Installed Packages
 The custom variables section is ugly as hell and I didn't want it in my init any longer. This here puts it somewhere I will never remember to look at so I don't have to worry my pretty little head any longer.
@@ -172,6 +173,11 @@ The custom variables section is ugly as hell and I didn't want it in my init any
 (load custom-file 'noerror 'nomessage)
 #+end_src
 * UI and Theming
+** Font
+I am trying a new font
+#+begin_src emacs-lisp
+  (set-frame-font "Commit Mono-10")
+#+end_src
 ** Minimalism
 These settings all but guarantee that my Emacs will be unusable to any stranger that happens upon it. I will argue that it is simply there to clean up the visual space to make me "more efficient" or some nonsense like that. Minimalism for minimalism's sake.
 #+begin_src emacs-lisp
@@ -185,16 +191,31 @@ These settings all but guarantee that my Emacs will be unusable to any stranger 
 ** Theme
 This is my current preferred theme although I think that I would rather start changing things up. Right now this is how my whole operating system is arranged so I'll stick with it.
 
-I have now changed to prot's built in modus-vivendi which is nice
+I have now changed to prot's built in modus-vivendi which is nice. This block customizes it and changes to the tinted version. 
 #+begin_src emacs-lisp
-(load-theme 'modus-vivendi :no-confirm)
+  (load-theme 'modus-vivendi-tinted t)
+  (setq modus-themes-to-toggle '(modus-operandi-tinted modus-vivendi-tinted))
+  (define-key global-map "\C-z" 'modus-themes-toggle)
+  (global-set-key (kbd "C-x C-z") nil)
 #+end_src
+The last line there is because I kept accidentally suspending emacs and ruining my own life
+*** Old
   ;; Theming
 (when (display-graphic-p)
   (load-theme 'catppuccin :no-confirm)
   (setq catppuccin-flavor 'frappe)
   (catppuccin-reload))
-  
+** Mode Line
+#+begin_src emacs-lisp
+    (setq mode-line-format
+                '("%e"
+                  (:eval (format (propertize " %s" 'face 'bold) (buffer-name)))
+                  ))
+
+    (kill-local-variable 'mode-line-format)
+
+    (force-mode-line-update)
+#+end_src
 ** UI and Behavior Fixing
 For some reason this makes scrolling off the bottom only scroll one line at a time. 
 #+begin_src emacs-lisp
@@ -236,7 +257,7 @@ Keep documents updated with the changes you are making.
 #+end_src
 *** Geiser and Paredit
 #+begin_src emacs-lisp
-(add-hook 'scheme-load-hook 'paredit-mode)
+(add-hook 'scheme-mode-hook 'paredit-mode)
 #+end_src
 ** Minor Modes
 *** Save Place
@@ -245,10 +266,11 @@ Please send me back to where I was at last time.
 (save-place-mode +1)
 #+end_src
 *** Minibuffer History
-This will hopefully mean I never have to retype the things I want to do or the places I want to go.
+This will hopefully mean I never have to retype the things I want to do or the places I want to go. In addition I have added ways to save my registers and kill ring between sessions.
 #+begin_src emacs-lisp
-(setq history-length 25)
-(savehist-mode 1)
+  (setq history-length 25)
+   (savehist-mode 1)
+   (setq savehist-additional-variables '(register-alist kill-ring))
 #+end_src
 * Keybindings
 There is nothing here..yet
@@ -370,12 +392,15 @@ NOT ANYMORE: This function is what replaces italics with LaTeX blanks and then r
       (setq org-confirm-babel-evaluate nil)
       (org-export-to-file 'beamer (concat filename-stem "_slides.tex"))
       (org-latex-compile (concat  filename-stem "_slides.tex"))
-      (beginning-of-buffer)
-      (search-forward "Goet" nil t)
-      (org-beginning-of-line)
-      (org-kill-line)
-      (org-export-to-file 'latex (concat filename-stem "_handout.tex"))
-      (org-latex-compile (concat filename-stem "_handout.tex"))
+      
+      ; The section below is for exporting handouts. I am not currently doing that so it's commented to increase export speed
+      ;(beginning-of-buffer)
+      ;(search-forward "Goet" nil t)
+      ;(org-beginning-of-line)
+      ;(org-kill-line)
+      ;(org-export-to-file 'latex (concat filename-stem "_handout.tex"))
+      ;(org-latex-compile (concat filename-stem "_handout.tex"))
+      
       (setq org-confirm-babel-evaluate t)
       (revert-buffer nil t)))
 

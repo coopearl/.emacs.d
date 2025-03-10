@@ -2,7 +2,25 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-refile-last-stored"
+(("Under the Violent Sky.org"
+ (filename . "~/Documents/org/Under the Violent Sky.org")
+ (front-context-string . "\n\n* Notes       ")
+ (rear-context-string . "_TAGS: noexport\n")
+ (position . 87)
+ (last-modified 26557 63745 917222 298000))
+("Music"
+ (filename . "~/Music/")
+ (front-context-string . "  /home/josh/Mus")
+ (rear-context-string)
+ (position . 1)
+ (last-modified 26557 6300 802030 777000))
+("What Can Be Done.org"
+ (filename . "~/Documents/org/What Can Be Done.org")
+ (front-context-string . "\n* Notes\nb** Non")
+ (rear-context-string . "um:nil tags:nil\n")
+ (position . 136)
+ (last-modified 26558 14021 500355 917000))
+("org-refile-last-stored"
  (filename . "~/Documents/org/obsidianRefile.org")
  (front-context-string . "** Your Heart is")
  (rear-context-string . "jamin Labatut.\n\n")
